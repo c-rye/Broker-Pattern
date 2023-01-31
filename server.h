@@ -1,4 +1,7 @@
-#pragma
+#pragma once
+
+#ifndef SERVER_H
+#define SERVER_H
 #include <string>
 
 using namespace std;
@@ -12,20 +15,32 @@ using namespace std;
 #define INFO_NAME 11
 #define INFO_DATA 12
 
-class broker
+class server
 {
+private:
+	string name;
+
+	int data;
+
+	int msgType;
 
 public:
 
-	broker();
+	server();
 
-	void forwardRequest(int msgType, string name, int data);
+	server(string name, int data);
 
-	void forwardResponse(int msgType);
+	void setName(string name);
 
-	void registerObject();
+	string getName();
+
+	void setData(int data);
+
+	int getData();
 
 
 
 
 };
+
+#endif
