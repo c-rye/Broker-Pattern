@@ -1,5 +1,6 @@
 #pragma
 #include <string>
+#include "Server.h"
 
 using namespace std;
 
@@ -23,9 +24,7 @@ public:
 
 	void forwardResponse(int msgType);
 
-	void registerObject();
-
-
+	void registerObject(ServerTypes st, Server s);
 
 
 };

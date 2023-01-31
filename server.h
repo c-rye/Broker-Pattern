@@ -1,8 +1,10 @@
 #pragma once
+#include <string>
+#include "ServerTypes.h"
 
 #ifndef SERVER_H
 #define SERVER_H
-#include <string>
+
 
 using namespace std;
 
@@ -20,7 +22,7 @@ class Server
 private:
 	string name;
 
-	int serverType;
+	ServerTypes serverType;
 
 	int data;
 
@@ -30,7 +32,7 @@ public:
 
 	Server();
 
-	Server(int enumeration);
+	Server(ServerTypes enumeration);
 
 	Server(string name, int data);
 
