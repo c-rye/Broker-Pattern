@@ -1,17 +1,17 @@
-#include "broker.h"
+#include "Broker.h"
 
 
 using namespace std;
 
 
-broker::broker()
+Broker::Broker()
 {
 }
 
-void broker::forwardRequest(int msgType, string name, int data)
+void Broker::forwardRequest(int msgType, string name, int data)
 {
 }
 
-void broker::forwardResponse(int msgType)
+void Broker::forwardResponse(int msgType)
 {
 }

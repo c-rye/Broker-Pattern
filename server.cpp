@@ -1,9 +1,9 @@
-#include "server.h"
+#include "Server.h"
 
 using namespace std;
 
 
-server::server() {
+Server::Server() {
 	name = "";
 
 	data = 0;
@@ -11,7 +11,7 @@ server::server() {
 	msgType = NO_MSG;
 
 }
-server::server(string n, int d)
+Server::Server(string n, int d)
 {
 	name = n;
 
@@ -19,19 +19,19 @@ server::server(string n, int d)
 
 	msgType = NO_MSG;
 }
-void server::setName(string n)
+void Server::setName(string n)
 {
 	name = n;
 }
-string server::getName()
+string Server::getName()
 {
 	return name;
 }
-void server::setData(int d)
+void Server::setData(int d)
 {
 	data = d;
 }
-int server::getData()
+int Server::getData()
 {
 	return data;
 }

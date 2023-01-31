@@ -128,15 +128,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt\string.h" />
-    <ClInclude Include="broker.h" />
-    <ClInclude Include="client.h" />
-    <ClInclude Include="server.h" />
+    <ClInclude Include="Broker.h" />
+    <ClInclude Include="Client.h" />
+    <ClInclude Include="MsgParcel.h" />
+    <ClInclude Include="Server.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="broker.cpp" />
-    <ClCompile Include="client.cpp" />
+    <ClCompile Include="Broker.cpp" />
+    <ClCompile Include="Client.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="server.cpp" />
+    <ClCompile Include="MsgParcel.cpp" />
+    <ClCompile Include="Server.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

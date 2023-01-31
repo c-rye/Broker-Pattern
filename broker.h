@@ -12,12 +12,12 @@ using namespace std;
 #define INFO_NAME 11
 #define INFO_DATA 12
 
-class broker
+class Broker
 {
 
 public:
 
-	broker();
+	Broker();
 
 	void forwardRequest(int msgType, string name, int data);
 

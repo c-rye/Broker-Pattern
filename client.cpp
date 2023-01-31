@@ -1,9 +1,9 @@
-#include "client.h"
+#include "Client.h"
 
 
 using namespace std;
 
-client::client()
+Client::Client()
 {
 	msgType = NO_MSG;
 
@@ -12,7 +12,7 @@ client::client()
 	data = 0;
 }
 
-client::client(string n, int d)
+Client::Client(string n, int d)
 {
 	msgType = NO_MSG;
 
@@ -22,37 +22,37 @@ client::client(string n, int d)
 
 }
 
-void client::setClientMsgType(int msgT)
+void Client::setClientMsgType(int msgT)
 {
 	msgType = msgT;
 }
 
-int client::getClientMsgType()
+int Client::getClientMsgType()
 {
 	return msgType;
 }
 
-void client::setClientName(string n)
+void Client::setClientName(string n)
 {
 	name = n;
 }
 
-string client::getClientName()
+string Client::getClientName()
 {
 	return name;
 }
 
-void client::setClientData(int d)
+void Client::setClientData(int d)
 {
 	data = d;
 }
 
-int client::getClientData()
+int Client::getClientData()
 {
 	return data;
 }
 
-void client::requestServerInfo()
+void Client::requestServerInfo()
 {
 	msgType = MSG_REQUEST;
 }

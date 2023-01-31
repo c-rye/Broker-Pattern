@@ -12,7 +12,7 @@ using namespace std;
 #define INFO_NAME 11
 #define INFO_DATA 12
 
-class client
+class Client
 {
 
 
@@ -25,9 +25,9 @@ private:
 	int data;
 
 public:
-	client();
+	Client();
 
-	client(string name, int data);
+	Client(string name, int data);
 
 	void setClientMsgType(int msgType);
 

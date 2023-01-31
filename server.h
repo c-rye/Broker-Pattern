@@ -15,7 +15,7 @@ using namespace std;
 #define INFO_NAME 11
 #define INFO_DATA 12
 
-class server
+class Server
 {
 private:
 	string name;
@@ -26,9 +26,9 @@ private:
 
 public:
 
-	server();
+	Server();
 
-	server(string name, int data);
+	Server(string name, int data);
 
 	void setName(string name);
 
