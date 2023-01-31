@@ -131,6 +131,7 @@
     <ClInclude Include="Broker.h" />
     <ClInclude Include="Client.h" />
     <ClInclude Include="MsgParcel.h" />
+    <ClInclude Include="Server_Types.h" />
     <ClInclude Include="Server.h" />
   </ItemGroup>
   <ItemGroup>

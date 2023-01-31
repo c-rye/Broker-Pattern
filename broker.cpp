@@ -1,4 +1,5 @@
 #include "Broker.h"
+#include "Server_Types.h"
 
 
 using namespace std;

@@ -2,8 +2,14 @@
 #include "Broker.h"
 #include "Server.h"
 
-static Broker broker;
+
 
 int main() {
+
+	static Broker broker;
+	Server server;
+	Client client;
+
+
 
 }
