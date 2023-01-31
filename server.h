@@ -20,6 +20,8 @@ class Server
 private:
 	string name;
 
+	int serverType;
+
 	int data;
 
 	int msgType;
@@ -27,6 +29,8 @@ private:
 public:
 
 	Server();
+
+	Server(int enumeration);
 
 	Server(string name, int data);
 

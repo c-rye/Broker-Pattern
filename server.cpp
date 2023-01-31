@@ -10,6 +10,19 @@ Server::Server() {
 
 	msgType = NO_MSG;
 
+	serverType = 0;
+
+}
+Server::Server(int enumeration)
+{
+	name = "";
+
+	data = 0;
+
+	msgType = NO_MSG;
+
+	serverType = enumeration;
+
 }
 Server::Server(string n, int d)
 {
@@ -18,6 +31,8 @@ Server::Server(string n, int d)
 	data = d;
 
 	msgType = NO_MSG;
+
+	serverType = 0;
 }
 void Server::setName(string n)
 {

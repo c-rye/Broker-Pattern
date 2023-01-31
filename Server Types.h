@@ -1,6 +1,6 @@
 #pragma once
-#ifndef SERVER_TYPES_H
-#define SERVER_TYPES_H
+#ifndef SERVERTYPES_H
+#define SERVERTYPES_H
 
 enum ServerTypes {
 	Storage
