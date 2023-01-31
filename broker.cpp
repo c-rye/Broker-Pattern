@@ -2,6 +2,8 @@
 #include "ServerTypes.h"
 
 
+
+
 using namespace std;
 
 
@@ -19,5 +21,7 @@ void Broker::forwardResponse(int msgType)
 
 void Broker::registerObject(ServerTypes st, Server s)
 {
+	
+	regObjs[st] = s;
 
 }

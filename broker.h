@@ -1,5 +1,6 @@
 #pragma
 #include <string>
+#include <map>
 #include "Server.h"
 
 using namespace std;
@@ -15,7 +16,8 @@ using namespace std;
 
 class Broker
 {
-
+private:
+	map<ServerTypes, Server> regObjs;
 public:
 
 	Broker();
