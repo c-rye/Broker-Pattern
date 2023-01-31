@@ -1,5 +1,7 @@
 #pragma once
 #include <string>
+#include "ServerTypes.h"
+#include "MsgParcel.h"
 
 using namespace std;
 
@@ -24,10 +26,16 @@ private:
 
 	int data;
 
+	MsgParcel parcel;
+
 public:
 	Client();
 
 	Client(string name, int data);
+
+	void setMsgParcel(MsgParcel mp);
+
+	MsgParcel getMsgParcel();
 
 	void setClientMsgType(int msgType);
 

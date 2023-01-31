@@ -22,6 +22,17 @@ Client::Client(string n, int d)
 
 }
 
+void Client::setMsgParcel(MsgParcel mp)
+{
+	parcel = mp;
+}
+
+MsgParcel Client::getMsgParcel()
+{
+	return MsgParcel();
+}
+
+
 void Client::setClientMsgType(int msgT)
 {
 	msgType = msgT;

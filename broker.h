@@ -2,6 +2,7 @@
 #include <string>
 #include <map>
 #include "Server.h"
+#include "MsgParcel.h"
 
 using namespace std;
 
@@ -22,11 +23,10 @@ public:
 
 	Broker();
 
-	void forwardRequest(int msgType, string name, int data);
+	void forwardRequest(MsgParcel mp, ServerTypes st);
 
-	void forwardResponse(int msgType);
+	void forwardResponse(MsgParcel mp);
 
 	void registerObject(ServerTypes st, Server s);
-
 
 };

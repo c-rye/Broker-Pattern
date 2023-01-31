@@ -11,13 +11,21 @@ Broker::Broker()
 {
 }
 
-void Broker::forwardRequest(int msgType, string name, int data)
+void Broker::forwardRequest(MsgParcel mp, ServerTypes st)
+{
+	Server server = regObjs[st];
+
+	switch (st) {
+	case Storage:
+		server.printMsg("Switch case 'Storage'");
+	}
+}
+
+void Broker::forwardResponse(MsgParcel mp)
 {
 }
 
-void Broker::forwardResponse(int msgType)
-{
-}
+
 
 void Broker::registerObject(ServerTypes st, Server s)
 {

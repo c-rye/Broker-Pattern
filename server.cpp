@@ -1,4 +1,5 @@
 #include "Server.h"
+#include <iostream>
 
 using namespace std;
 
@@ -45,6 +46,10 @@ void Server::setData(int d)
 int Server::getData()
 {
 	return data;
+}
+void Server::printMsg(string s)
+{
+	cout << s;
 }
 ;
 

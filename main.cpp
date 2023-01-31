@@ -10,6 +10,6 @@ int main() {
 	Server server;
 	Client client;
 
-
+	broker.registerObject(Storage, server);
 
 }
