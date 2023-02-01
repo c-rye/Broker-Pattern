@@ -64,7 +64,7 @@ int Client::getClientData()
 	return data;
 }
 
-void Client::requestServerInfo(MsgParcel reqP)
+void Client::requestServerInfo(Broker b, MsgParcel reqP)
 {
 
 	parcel = reqP;
