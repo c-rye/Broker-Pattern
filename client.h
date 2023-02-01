@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
-#include "ServerTypes.h"
+//#include "Broker.h"
+#include "ServiceTypes.h"
 #include "MsgParcel.h"
 
 using namespace std;
@@ -13,6 +14,9 @@ using namespace std;
 // define what kind of info is being requested
 #define INFO_NAME 11
 #define INFO_DATA 12
+
+// forward declaration
+class Broker;
 
 class Client
 {

@@ -1,17 +1,20 @@
 #pragma once
-#include "ServerTypes.h"
+#include "ServiceTypes.h"
 
 
 
 class MsgParcel
 {
 private:
-	ServerTypes serverType;
+	ServiceTypes serviceType;
 
 public:
 
 	MsgParcel();
 
-	MsgParcel(ServerTypes st);
+	MsgParcel(ServiceTypes st);
+
+	ServiceTypes getServerType();
+
 };
 

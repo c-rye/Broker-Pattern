@@ -1,4 +1,8 @@
 #pragma
+
+#ifndef BROKER_H
+#define BROKER_H
+
 #include <string>
 #include <map>
 #include "Server.h"
@@ -18,15 +22,17 @@ using namespace std;
 class Broker
 {
 private:
-	map<ServerTypes, Server> regObjs;
+	map<ServiceTypes, Server> regObjs;
 public:
 
 	Broker();
 
-	void forwardRequest(MsgParcel mp, ServerTypes st);
+	void handleRequest(MsgParcel mp);
 
 	void forwardResponse(MsgParcel mp);
 
-	void registerObject(ServerTypes st, Server s);
+	void registerObject(Server s);
 
 };
+
+#endif

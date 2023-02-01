@@ -30,7 +30,7 @@
     <ClInclude Include="MsgParcel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ServerTypes.h">
+    <ClInclude Include="ServiceTypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

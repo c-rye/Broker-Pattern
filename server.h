@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-#include "ServerTypes.h"
+#include "ServiceTypes.h"
 
 #ifndef SERVER_H
 #define SERVER_H
@@ -22,7 +22,7 @@ class Server
 private:
 	string name;
 
-	ServerTypes serverType;
+	ServiceTypes serviceType;
 
 	int data;
 
@@ -32,7 +32,7 @@ public:
 
 	Server();
 
-	Server(ServerTypes enumeration);
+	Server(ServiceTypes enumeration);
 
 	Server(string name, int data);
 
@@ -44,7 +44,11 @@ public:
 
 	int getData();
 
-	void service();
+	void setServerType(ServiceTypes sType);
+
+	ServiceTypes getServerType();
+
+	void getService();
 
 
 

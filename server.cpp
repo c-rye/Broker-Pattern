@@ -12,7 +12,7 @@ Server::Server() {
 	msgType = NO_MSG;
 
 }
-Server::Server(ServerTypes type)
+Server::Server(ServiceTypes server)
 {
 	name = "";
 
@@ -20,7 +20,7 @@ Server::Server(ServerTypes type)
 
 	msgType = NO_MSG;
 
-	serverType = type;
+	serviceType = server;
 
 }
 Server::Server(string n, int d)
@@ -47,9 +47,17 @@ int Server::getData()
 {
 	return data;
 }
-void Server::service()
+void Server::setServerType(ServiceTypes sType)
 {
-	cout << serverType;
+	serviceType = sType;
+}
+ServiceTypes Server::getServerType()
+{
+	return serviceType;
+}
+void Server::getService()
+{
+	cout << (int) serviceType;
 }
 ;
 

@@ -8,13 +8,17 @@
 int main() {
 
 	static Broker broker;
-	Server server;
 
-	broker.registerObject(Storage, server);
+	Server server(Storage);
+
+	broker.registerObject(server);
 
 	MsgParcel parcel(Storage);
+
 	Client client;
 
-	
+	client.requestServerInfo(broker, parcel);
 
+	
+	return 0;
 }

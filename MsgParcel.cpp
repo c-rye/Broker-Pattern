@@ -2,10 +2,16 @@
 
 MsgParcel::MsgParcel()
 {
-	serverType = Non;
+	serviceType = Non;
 }
 
-MsgParcel::MsgParcel(ServerTypes st)
+MsgParcel::MsgParcel(ServiceTypes st)
 {
-	serverType = st;
+	serviceType = st;
 }
+
+ServiceTypes MsgParcel::getServerType()
+{
+	return serviceType;
+}
+

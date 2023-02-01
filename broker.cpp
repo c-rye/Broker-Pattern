@@ -1,5 +1,6 @@
+#include <iostream>
 #include "Broker.h"
-#include "ServerTypes.h"
+#include "ServiceTypes.h"
 
 
 
@@ -11,13 +12,17 @@ Broker::Broker()
 {
 }
 
-void Broker::forwardRequest(MsgParcel mp, ServerTypes st)
+void Broker::handleRequest(MsgParcel mp)
 {
-	Server server = regObjs[st];
 
-	switch (st) {
+	ServiceTypes service = mp.getServerType();
+
+	Server server = regObjs[service];
+
+	switch (service) {
 	case Storage:
-		server.service();
+		cout << "Received service request: Storage";
+		server.getService();
 	}
 }
 
@@ -27,9 +32,10 @@ void Broker::forwardResponse(MsgParcel mp)
 
 
 
-void Broker::registerObject(ServerTypes st, Server s)
+void Broker::registerObject(Server s)
 {
-	
+	ServiceTypes st = s.getServerType();
+
 	regObjs[st] = s;
 
 }
