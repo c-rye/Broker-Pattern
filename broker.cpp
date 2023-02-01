@@ -17,7 +17,7 @@ void Broker::forwardRequest(MsgParcel mp, ServerTypes st)
 
 	switch (st) {
 	case Storage:
-		server.printMsg("Switch case 'Storage'");
+		server.service();
 	}
 }
 

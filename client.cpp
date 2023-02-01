@@ -29,7 +29,7 @@ void Client::setMsgParcel(MsgParcel mp)
 
 MsgParcel Client::getMsgParcel()
 {
-	return MsgParcel();
+	return parcel;
 }
 
 

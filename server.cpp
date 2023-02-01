@@ -47,9 +47,9 @@ int Server::getData()
 {
 	return data;
 }
-void Server::printMsg(string s)
+void Server::service()
 {
-	cout << s;
+	cout << serverType;
 }
 ;
 

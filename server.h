@@ -44,7 +44,7 @@ public:
 
 	int getData();
 
-	void printMsg(string s);
+	void service();
 
 
 
