@@ -9,6 +9,9 @@ private:
 	ServerTypes serverType;
 
 public:
+
+	MsgParcel();
+
 	MsgParcel(ServerTypes st);
 };
 

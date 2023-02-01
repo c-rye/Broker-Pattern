@@ -3,6 +3,7 @@
 #define SERVERTYPES_H
 
 enum ServerTypes {
+	Non,
 	Storage
 };
 

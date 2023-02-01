@@ -1,4 +1,5 @@
 #include "Client.h"
+#include "Broker.h"
 
 
 using namespace std;
@@ -63,7 +64,10 @@ int Client::getClientData()
 	return data;
 }
 
-void Client::requestServerInfo()
+void Client::requestServerInfo(MsgParcel reqP)
 {
+
+	parcel = reqP;
+
 	msgType = MSG_REQUEST;
 }

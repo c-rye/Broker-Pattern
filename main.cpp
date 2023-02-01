@@ -9,9 +9,12 @@ int main() {
 
 	static Broker broker;
 	Server server;
+
+	broker.registerObject(Storage, server);
+
 	MsgParcel parcel(Storage);
 	Client client;
 
-	broker.registerObject(Storage, server);
+	
 
 }

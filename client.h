@@ -49,7 +49,7 @@ public:
 
 	int getClientData();
 
-	void requestServerInfo();
+	void requestServerInfo(MsgParcel reqP);
 
 };
 
