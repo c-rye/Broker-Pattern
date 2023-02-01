@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Client.h"
 #include "Broker.h"
 #include "ServiceTypes.h"
@@ -69,6 +70,8 @@ void Client::requestServerInfo(Broker broker, MsgParcel reqP)
 {
 	parcel = reqP;
 	
+	cout << "\nClient: requesting server info...";
+
 	broker.handleRequest(parcel);
 
 	

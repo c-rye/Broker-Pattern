@@ -57,7 +57,7 @@ ServiceTypes Server::getServerType()
 }
 void Server::getService()
 {
-	cout << (int) serviceType;
+	cout << "\nServer: getService() = " << (int)serviceType;
 }
 ;
 
